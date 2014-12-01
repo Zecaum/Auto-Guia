@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body ng-app="autoguiaApp">
+
+<nav role="navigation" id="nav1" class="navbar navbar-defalut">
+
+        <ul class="nav navbar-nav">
+
+            <li><a ng-href="#/home" class="navbar-brand">AutoGuia</a></li>
+            <li><a ng-href="#/missao" class="navbar-brand">Missão</a></li>
+            <li><a ng-href="#/servicos"  class="navbar-brand">Serviços</a></li>
+            <li><a ng-href="#/quemsomos" class="navbar-brand">Quem Somos</a></li>
+        </ul>
+
+</nav>
+
+<ng-view></ng-view>
+
+
+<div class="linha"></div>
+
+<footer>
+    <div class="container">
+        <div class="col-lg-4">
+            <h4>Recursos Tecnológicos</h4>
+                <p>Conheça algumas das tecnologias que são utilizadas
+                para auxílio dos deficientes visuais, para que estes
+                também possam ter o seu acesso à internet garantido!</p>
+            <a class="saiba" href="http://www.turminha.mpf.mp.br/viva-a-diferenca/acessibilidade/os-recursos-tecnologicos-para-cegos">Saiba Mais</a>
+
+        </div>
+        <div class="col-lg-4">
+            <h4>Já conhece o WAVE?</h4>
+            <p>Você insere a URL do seu site e WAVE te leva para o site digitado e mostra
+                em tempo de execução onde há erros, e como podemos corrigir, para testarmos
+                a acessibilidade, que tal? vamos testar?</p>
+            <a href="http://wave.webaim.org//">Saiba Mais</a>
+
+        </div>
+        <div class="col-lg-4">
+            <h4>Acessibilidade.org.br</h4>
+            <p>Site de utilidade pública com normas técnicas, manuais
+                e cartilhas para promoção de acessibilidade e inclusão
+                da pessoa com deficiência.</p>
+            <a href="http://www.acessibilidade.org.br/?gclid=CNTC5f7XhsICFWVp7Aod62AAfA">Saiba Mais</a>
+
+        </div>
+    </div>
+</footer>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="App.js"></script>
+
+</body>
+</html>
